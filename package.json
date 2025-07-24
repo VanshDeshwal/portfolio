@@ -1,0 +1,57 @@
+{
+  "name": "vansh-deshwal-portfolio",
+  "version": "1.0.0",
+  "description": "A modern, responsive portfolio website for AI/ML engineer and cryptology researcher",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx live-server --port=3000",
+    "dev": "npx live-server --port=3000 --watch=.",
+    "build": "echo 'Building for production...' && npm run minify",
+    "minify": "npx minify styles.css > styles.min.css && npx minify script.js > script.min.js",
+    "deploy": "echo 'Ready for GitHub Pages deployment'",
+    "test": "echo 'No tests specified'",
+    "lint": "npx htmlhint index.html && npx stylelint styles.css",
+    "serve": "python -m http.server 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanshdeshwal/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "data-science",
+    "machine-learning",
+    "deep-learning",
+    "artificial-intelligence",
+    "cryptology",
+    "web-development",
+    "responsive-design",
+    "github-pages"
+  ],
+  "author": {
+    "name": "Vansh Deshwal",
+    "email": "vansh.deshwal@example.com",
+    "url": "https://vanshdeshwal.github.io/portfolio"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vanshdeshwal/portfolio/issues"
+  },
+  "homepage": "https://vanshdeshwal.github.io/portfolio",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "minify": "^10.0.0",
+    "htmlhint": "^1.1.4",
+    "stylelint": "^15.10.3"
+  },
+  "dependencies": {},
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
