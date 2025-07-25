@@ -31,6 +31,7 @@
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#experience" class="nav-link">Experience</a>
                 <a href="#contact" class="nav-link">Contact</a>
+                <a id="resume-link" href="https://resume.vanshdeshwal.dev?theme=light" target="_blank" class="nav-link">Resume</a>
             </div>
             <div class="nav-toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -438,5 +439,51 @@
 
     <!-- Scripts -->
     <script src="script.js"></script>
+    
+    <!-- Resume Theme Synchronization -->
+    <script>
+        // Function to detect current theme
+        function getCurrentTheme() {
+            // Check if dark theme is active (you can adjust this based on your theme implementation)
+            return document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+        }
+
+        // Function to update resume link with current theme
+        function updateResumeLinkTheme() {
+            const theme = getCurrentTheme();
+            const resumeLink = document.getElementById('resume-link');
+            if (resumeLink) {
+                resumeLink.href = `https://resume.vanshdeshwal.dev?theme=${theme}`;
+            }
+        }
+
+        // Update resume link on page load
+        document.addEventListener('DOMContentLoaded', updateResumeLinkTheme);
+
+        // Update resume link when theme changes (if you implement theme toggle)
+        const observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                    updateResumeLinkTheme();
+                }
+            });
+        });
+
+        // Observe body class changes for theme updates
+        observer.observe(document.body, {
+            attributes: true,
+            attributeFilter: ['class']
+        });
+
+        // If theme toggle buttons exist, add event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            const themeToggles = document.querySelectorAll('.theme-toggle, .theme-btn');
+            themeToggles.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    setTimeout(updateResumeLinkTheme, 100); // Small delay to ensure theme change is applied
+                });
+            });
+        });
+    </script>
 </body>
 </html>
