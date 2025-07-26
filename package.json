@@ -1,57 +1,34 @@
 {
   "name": "vansh-deshwal-portfolio",
-  "version": "1.0.0",
-  "description": "A modern, responsive portfolio website for AI/ML engineer and cryptology researcher",
+  "version": "2.0.0",
+  "description": "Personal portfolio website showcasing AI/ML projects and expertise",
   "main": "index.html",
   "scripts": {
-    "start": "npx live-server --port=3000",
-    "dev": "npx live-server --port=3000 --watch=.",
-    "build": "echo 'Building for production...' && npm run minify",
-    "minify": "npx minify styles.css > styles.min.css && npx minify script.js > script.min.js",
-    "deploy": "echo 'Ready for GitHub Pages deployment'",
-    "test": "echo 'No tests specified'",
-    "lint": "npx htmlhint index.html && npx stylelint styles.css",
-    "serve": "python -m http.server 8000"
+    "dev": "python -m http.server 8000",
+    "build": "echo 'Static site - no build required'",
+    "lint:css": "echo 'CSS linting placeholder'",
+    "lint:js": "echo 'JavaScript linting placeholder'",
+    "validate": "echo 'HTML validation placeholder'",
+    "test": "echo 'Tests placeholder'"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vanshdeshwal/portfolio.git"
+    "url": "https://github.com/VanshDeshwal/portfolio"
   },
   "keywords": [
     "portfolio",
-    "data-science",
+    "ai",
     "machine-learning",
-    "deep-learning",
-    "artificial-intelligence",
-    "cryptology",
+    "data-science",
     "web-development",
-    "responsive-design",
-    "github-pages"
+    "javascript",
+    "css",
+    "html"
   ],
-  "author": {
-    "name": "Vansh Deshwal",
-    "email": "vansh.deshwal@example.com",
-    "url": "https://vanshdeshwal.github.io/portfolio"
-  },
+  "author": "Vansh Deshwal <vanshdeshwal66@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vanshdeshwal/portfolio/issues"
+    "url": "https://github.com/VanshDeshwal/portfolio/issues"
   },
-  "homepage": "https://vanshdeshwal.github.io/portfolio",
-  "devDependencies": {
-    "live-server": "^1.2.2",
-    "minify": "^10.0.0",
-    "htmlhint": "^1.1.4",
-    "stylelint": "^15.10.3"
-  },
-  "dependencies": {},
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ],
-  "engines": {
-    "node": ">=14.0.0",
-    "npm": ">=6.0.0"
-  }
+  "homepage": "https://vanshdeshwal.dev"
 }

@@ -1,489 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vansh Deshwal - AI/ML Portfolio</title>
-    <meta name="description" content="Vansh Deshwal - Data Science, Machine Learning, Deep Learning & AI Portfolio">
-    <meta name="keywords" content="Data Science, Machine Learning, Deep Learning, AI, Cryptology, Portfolio">
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vansh Deshwal - AI/ML Portfolio</title>
+  <meta name="description" content="Vansh Deshwal - Data Science, AI & Machine Learning Portfolio. Showcasing innovative projects in artificial intelligence and machine learning.">
+  <meta name="keywords" content="AI, Machine Learning, Data Science, Portfolio, Vansh Deshwal">
+  <meta name="author" content="Vansh Deshwal">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vanshdeshwal.dev/">
+  <meta property="og:title" content="Vansh Deshwal - AI/ML Portfolio">
+  <meta property="og:description" content="Data Science, AI & Machine Learning Portfolio">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://vanshdeshwal.dev/">
+  <meta property="twitter:title" content="Vansh Deshwal - AI/ML Portfolio">
+  <meta property="twitter:description" content="Data Science, AI & Machine Learning Portfolio">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">VD</span>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#contact" class="nav-link">Contact</a>
-                <a id="resume-link" href="https://resume.vanshdeshwal.dev?theme=light" target="_blank" class="nav-link">Resume</a>
-            </div>
-            <div class="nav-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+<body data-theme="light">
+  <!-- Theme Toggle -->
+  <button class="theme-toggle" aria-label="Toggle dark/light mode">
+    <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="5"></circle>
+      <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+    </svg>
+    <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+  </button>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <p class="hero-greeting">Hello, I'm</p>
-                    <h1 class="hero-title">Vansh Deshwal</h1>
-                    <h2 class="hero-subtitle">AI/ML Engineer & Cryptology Researcher</h2>
-                    <p class="hero-description">
-                        MTech student in Cryptology at ISI Kolkata, passionate about advancing the frontiers of 
-                        artificial intelligence, machine learning, and secure systems.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View Projects</a>
-                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="hero-avatar">
-                        <div class="avatar-placeholder">
-                            <i class="fas fa-user"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="hero-scroll">
-            <a href="#about">
-                <i class="fas fa-chevron-down"></i>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <div class="hero-text">
+          <h1 class="hero-title">Vansh Deshwal</h1>
+          <p class="hero-subtitle">Shaping Tomorrow with Data & Intelligence</p>
+          <p class="hero-description">
+            Transforming complex data into intelligent solutions through machine learning and AI. 
+            Currently pursuing MTech in Cryptology while building the future of secure, intelligent systems.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="https://resume.vanshdeshwal.dev" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              Resume
+              <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                <path d="M15 3h6v6"></path>
+                <path d="M10 14L21 3"></path>
+              </svg>
             </a>
+          </div>
         </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Projects Section -->
+  <main>
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          
+          <!-- Project 1: ML Playground -->
+          <article class="project-card ghost-card">
+            <div class="project-animation-area">
+              <!-- Ghost Animation -->
+              <div id="ghost">
+                <div id="red">
+                  <div id="pupil"></div>
+                  <div id="pupil1"></div>
+                  <div id="eye"></div>
+                  <div id="eye1"></div>
+                  <div id="top0"></div>
+                  <div id="top1"></div>
+                  <div id="top2"></div>
+                  <div id="top3"></div>
+                  <div id="top4"></div>
+                  <div id="st0"></div>
+                  <div id="st1"></div>
+                  <div id="st2"></div>
+                  <div id="st3"></div>
+                  <div id="st4"></div>
+                  <div id="st5"></div>
+                  <div id="an1"></div>
+                  <div id="an2"></div>
+                  <div id="an3"></div>
+                  <div id="an4"></div>
+                  <div id="an5"></div>
+                  <div id="an6"></div>
+                  <div id="an7"></div>
+                  <div id="an8"></div>
+                  <div id="an9"></div>
+                  <div id="an10"></div>
+                  <div id="an11"></div>
+                  <div id="an12"></div>
+                  <div id="an13"></div>
+                  <div id="an14"></div>
+                  <div id="an15"></div>
+                  <div id="an16"></div>
+                  <div id="an17"></div>
+                  <div id="an18"></div>
+                </div>
+                <div id="shadow"></div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">Interactive ML Playground</h3>
+                <div class="project-status">
+                  <span class="status-badge live">Live</span>
+                </div>
+              </div>
+            <p class="project-description">
+              A web-based platform for exploring machine learning algorithms with real-time visualization 
+              and interactive parameter tuning. Built from scratch with comprehensive sklearn comparisons.
+            </p>
+            <div class="project-technologies">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">Plotly</span>
+            </div>
+            <div class="project-links">
+              <a href="https://playground.vanshdeshwal.dev" class="project-link primary" target="_blank" rel="noopener noreferrer">
+                Live Demo
+                <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                  <path d="M15 3h6v6"></path>
+                  <path d="M10 14L21 3"></path>
+                </svg>
+              </a>
+              <a href="https://github.com/VanshDeshwal/ml-playground" class="project-link secondary" target="_blank" rel="noopener noreferrer">
+                GitHub
+                <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Credit Risk Modeling -->
+          <article class="project-card credit-card">
+            <div class="project-animation-area">
+              <!-- Credit Card Breaking Animation -->
+              <div class="card-container">
+                <div class="flip-card_1">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <svg version="1.1" class="chip" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 50 50" xml:space="preserve">
+                        <image id="image0" width="50" height="50" x="0" y="0" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB6VBMVEUAAACNcTiVeUKVeUOYfEaafEeUeUSYfEWZfEaykleyklaXe0SWekSZZjOYfEWYe0WXfUWXe0WcgEicfkiXe0SVekSXekSWekKYe0a9nF67m12ZfUWUeEaXfESVekOdgEmVeUWWekSniU+VeUKVeUOrjFKYfEWliE6WeESZe0GSe0WYfES7ml2Xe0WXeESUeEOWfEWcf0eWfESXe0SXfEWYekSVeUKXfEWxklawkVaZfEWWekOUekOWekSYfESZe0eXekWYfEWZe0WZe0eVeUSWeETAnmDCoWLJpmbxy4P1zoXwyoLIpWbjvXjivnjgu3bfu3beunWvkFWxkle/nmDivXiWekTnwXvkwHrCoWOuj1SXe0TEo2TDo2PlwHratnKZfEbQrWvPrWuafUfbt3PJp2agg0v0zYX0zYSfgkvKp2frxX7mwHrlv3rsxn/yzIPgvHfduXWXe0XuyIDzzISsjVO1lVm0lFitjVPzzIPqxX7duna0lVncuHTLqGjvyIHeuXXxyYGZfUayk1iyk1e2lln1zYTEomO2llrbtnOafkjFpGSbfkfZtXLhvHfkv3nqxH3mwXujhU3KqWizlFilh06khk2fgkqsjlPHpWXJp2erjVOhg0yWe0SliE+XekShhEvAn2D///+gx8TWAAAARnRSTlMACVCTtsRl7Pv7+vxkBab7pZv5+ZlL/UnU/f3SJCVe+Fx39naA9/75XSMh0/3SSkia+pil/KRj7Pr662JPkrbP7OLQ0JFOijI1MwAAAAFiS0dEorDd34wAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfnAg0IDx2lsiuJAAACLElEQVRIx2NgGAXkAUYmZhZWPICFmYkRVQcbOwenmzse4MbFzc6DpIGXj8PD04sA8PbhF+CFaxEU8iWkAQT8hEVgOkTF/InR4eUVICYO1SIhCRMLDAoKDvFDVhUaEhwUFAjjSUlDdMiEhcOEItzdI6OiYxA6YqODIt3dI2DcuDBZsBY5eVTr4xMSYcyk5BRUOXkFsBZFJTQnp6alQxgZmVloUkrKYC0qqmji2WE5EEZuWB6alKoKdi35YQUQRkFYPpFaCouKIYzi6EDitJSUlsGY5RWVRGjJLyxNy4ZxqtIqqvOxaVELQwZFZdkIJVU1RSiSalAt6rUwUBdWG1CP6pT6gNqwOrgCdQyHNYR5YQFhDXj8MiK1IAeyN6aORiyBjByVTc0FqBoKWpqwRCVSgilOaY2OaUPw29qjOzqLvTAchpos47u6EZyYnngUSRwpuTe6D+6qaFQdOPNLRzOM1dzhRZyW+CZouHk3dWLXglFcFIflQhj9YWjJGlZcaKAVSvjyPrRQ0oQVKDAQHlYFYUwIm4gqExGmBSkutaVQJeomwViTJqPK6OhCy2Q9sQBk8cY0DxjTJw0lAQWK6cOKfgNhpKK7ZMpUeF3jPa28BCET amiEqJKM+X1gxvWXpoUjVIVPnwErw71nmpgiqiQGBjNzbgs3j1nus+fMndc+Cwm0T52/oNR9lsdCS24ra7Tq1cbWjpXV3sHRCb1idXZ0sGdltXNxRateRwHRAACYHutzk/2I5QAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wMi0xM1QwODoxNToyOSswMDowMEUnN7UAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDItMTNUMDg6MTU6MjkrMDA6MDA0eo8JAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTAyLTEzVDA4OjE1OjI5KzAwOjAwY2+u1gAAAABJRU5ErkJggg=="></image>
+                      </svg>
+                      <p class="valid_thru">VALID THRU</p>
+                      <p class="number">9759 2484 5269</p>
+                      <p class="date_8264">1 2 / 2 4</p>
+                      <p class="name">BRUCE WAYNE</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card_2">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <p class="heading_8264">RISK MODEL</p>
+                      <svg class="logo" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 48 48">
+                        <path fill="#ff9800" d="M32 10A14 14 0 1 0 32 38A14 14 0 1 0 32 10Z"></path>
+                        <path fill="#d50000" d="M16 10A14 14 0 1 0 16 38A14 14 0 1 0 16 10Z"></path>
+                        <path fill="#ff3d00" d="M18,24c0,4.755,2.376,8.95,6,11.48c3.624-2.53,6-6.725,6-11.48s-2.376-8.95-6-11.48 C20.376,15.05,18,19.245,18,24z"></path>
+                      </svg>
+                      <svg version="1.1" class="contactless" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 50 50" xml:space="preserve">
+                        <image id="image0" width="50" height="50" x="0" y="0" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAQAAAC0NkA6AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfnAg0IEzgIwaKTAAADDklEQVRYw+1XS0iUURQ+f5qPyjQflGRFEEFK76koKGxRbWyVVLSOgsCgwjZBJJYuKogSIoOonUK4q3U0WVBWFPZYiIE6kuArG3VGzK/FfPeMM/MLt99/NuHdfPd888/57jn3nvsQWWj/VcMlvMMd5KRTogqx9iCdIjUUmcGR9ImUYowyP3xNGQJoRLVaZ2DaZf8kyjEJALhI28ELioyiwC+Rc3QZwRYyO/DH51hQgWm6DMIh10KmD4u9O16K49itVoPOAmcGAWWOepXIRScAoJZ2Frro8oN+EyTT6lWkkg6msZfMSR35QTJmjU0g15tIGSJ08ZZMJkJkHpNZgSkyXosS13TkJpZ62mPIJvOSzC1bp8vRhhCakEk7G9/o4gmZdbpsTcKu0m63FbnBP9Qrc15zbkbemfgNDtEOI8NO5L5O9VYyRYgmJayZ9nPaxZrSjW4+F6Uw9yQqIiIZwhp2huQTf6OIvCZyGM6gDJBZbyXifJXr7FZjGXsdxADxI7HUJFB6iWvsIhFpkoiIiGTJfjJfiCuJg2ZEspq9EHGVpYgzKqwJqSAOEwuJQ/pxPvE3cYltJCLdxBLiSKKIE5HxJKcTRNeadxfhDiuYw44zVs1dxKwRk/uCxIiQkxKBsSctRVAge9g1E15EHE6yRUaJecRxcWlukdRIbGFOSZCMWQA/iWauIP3slREHXPyliqBcrrD71Amzz+rD1Mt2Yr8TZc/UR4/YtFnbijnHi3UrN9vKQ9rPaJf867ZiaqDB+rzeKYmd3pNa6fuI75MiC0uXXSR5aEMf7s7a6r/PudVXkjFb/SsrCRfROk0Fx6+H1i9kkTGn/E1vEmt1m089fh+RKdQ5O+xNJPUicUIjO0Dm7HwvErEr0YxeibL1StSh37STafE4I7zcBdRq1DiOkdmlTJVnkQTBTS7X1FYyvfO4piaInKbDCDaT2anLudYXCRFsQBgAcIF2/Okwgvz5+Z4tsw118dzruvIvjhTB+HOuWy8UvovEH6beitBKxDyxm9MmISKCWrzB7bSlaqGlsf0FC0gMjzTg6GgAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDItMTNUMDg6MTk6NTYrMDA6MDCjlq7LAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTAyLTEzVDA4OjE5OjU2KzAwOjAw0ssWdwAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyMy0wMi0xM1QwODoxOTo1Nisw MDowMIXeN6gAAAAASUVORK5CYII="></image>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">Credit Risk Modeling</h3>
+                <div class="project-status">
+                  <span class="status-badge live">Live</span>
+                </div>
+              </div>
+            <p class="project-description">
+              Machine learning model for predicting credit default risk using advanced ensemble methods. 
+              Features real-time risk assessment, fraud detection, and comprehensive financial analytics dashboard.
+            </p>
+            <div class="project-technologies">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">XGBoost</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">SQLAlchemy</span>
+            </div>
+            <div class="project-links">
+              <a href="https://research.vanshdeshwal.dev" class="project-link primary" target="_blank" rel="noopener noreferrer">
+                Live Demo
+                <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                  <path d="M15 3h6v6"></path>
+                  <path d="M10 14L21 3"></path>
+                </svg>
+              </a>
+              <a href="https://github.com/VanshDeshwal/credit-risk-model" class="project-link secondary" target="_blank" rel="noopener noreferrer">
+                GitHub
+                <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.230.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: Blockchain Security Tool -->
+          <article class="project-card security-card">
+            <div class="project-animation-area">
+              <!-- Blockchain/Security Animation -->
+              <div class="security-animation">
+                <div class="security-lock">
+                  <div class="lock-body"></div>
+                  <div class="lock-shackle"></div>
+                  <div class="security-waves">
+                    <div class="wave wave-1"></div>
+                    <div class="wave wave-2"></div>
+                    <div class="wave wave-3"></div>
+                  </div>
+                </div>
+                <div class="blockchain-nodes">
+                  <div class="node node-1"></div>
+                  <div class="node node-2"></div>
+                  <div class="node node-3"></div>
+                  <div class="connection connection-1"></div>
+                  <div class="connection connection-2"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">Blockchain Security Tool</h3>
+                <div class="project-status">
+                  <span class="status-badge development">Coming Soon</span>
+                </div>
+              </div>
+            <p class="project-description">
+              Advanced cryptographic security analysis platform focusing on blockchain vulnerabilities 
+              and smart contract auditing. Integrating MTech research with practical security tools.
+            </p>
+            <div class="project-technologies">
+              <span class="tech-tag">Solidity</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Web3</span>
+              <span class="tech-tag">Cryptography</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link primary disabled">
+                In Development
+              </a>
+              <a href="#" class="project-link secondary disabled">
+                Private Repo
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4: AI Code Assistant -->
+          <article class="project-card ai-card">
+            <div class="project-animation-area">
+              <!-- AI/Code Animation -->
+              <div class="ai-animation">
+                <div class="ai-brain">
+                  <div class="brain-core"></div>
+                  <div class="neural-network">
+                    <div class="neuron neuron-1"></div>
+                    <div class="neuron neuron-2"></div>
+                    <div class="neuron neuron-3"></div>
+                    <div class="neuron neuron-4"></div>
+                    <div class="synapse synapse-1"></div>
+                    <div class="synapse synapse-2"></div>
+                    <div class="synapse synapse-3"></div>
+                  </div>
+                </div>
+                <div class="code-particles">
+                  <div class="particle particle-1">&lt;/&gt;</div>
+                  <div class="particle particle-2">{}</div>
+                  <div class="particle particle-3">[]</div>
+                  <div class="particle particle-4">fn</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">AI-Powered Code Assistant</h3>
+                <div class="project-status">
+                  <span class="status-badge development">Coming Soon</span>
+                </div>
+              </div>
+            <p class="project-description">
+              Intelligent code analysis and suggestion platform combining static analysis with machine learning. 
+              Features automated code review, bug detection, and performance optimization recommendations.
+            </p>
+            <div class="project-technologies">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Transformers</span>
+              <span class="tech-tag">AST</span>
+              <span class="tech-tag">VSCode API</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link primary disabled">
+                In Planning
+              </a>
+              <a href="#" class="project-link secondary disabled">
+                Private Repo
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
     </section>
+  </main>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Passionate about AI and Cryptology</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm currently pursuing my MTech in Cryptology from the prestigious Indian Statistical Institute (ISI), 
-                        Kolkata. With a BTech in Electronics and Communication Engineering, I've developed a strong foundation 
-                        in both theoretical and practical aspects of technology.
-                    </p>
-                    <p>
-                        My passion lies at the intersection of artificial intelligence, machine learning, deep learning, 
-                        and cryptographic systems. I'm particularly interested in developing secure AI systems and 
-                        exploring privacy-preserving machine learning techniques.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>15+</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                        <div class="stat">
-                            <h3>3+</h3>
-                            <p>Years Experience</p>
-                        </div>
-                        <div class="stat">
-                            <h3>5+</h3>
-                            <p>Research Papers</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="about-img-placeholder">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                </div>
-            </div>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="mailto:vanshdeshwal66@gmail.com" class="footer-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            Email
+          </a>
+          <a href="https://linkedin.com/in/vansh-deshwal" target="_blank" rel="noopener noreferrer" class="footer-link">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/VanshDeshwal" target="_blank" rel="noopener noreferrer" class="footer-link">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+            GitHub
+          </a>
         </div>
-    </section>
+        <p class="copyright">&copy; 2025 Vansh Deshwal. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Skills & Expertise</h2>
-                <p class="section-subtitle">Technologies and tools I work with</p>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>Machine Learning</h3>
-                    <ul>
-                        <li>Supervised & Unsupervised Learning</li>
-                        <li>Neural Networks & Deep Learning</li>
-                        <li>Computer Vision</li>
-                        <li>Natural Language Processing</li>
-                        <li>Reinforcement Learning</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Programming</h3>
-                    <ul>
-                        <li>Python (TensorFlow, PyTorch, Scikit-learn)</li>
-                        <li>R (Statistical Computing)</li>
-                        <li>SQL & NoSQL Databases</li>
-                        <li>JavaScript (Node.js, React)</li>
-                        <li>C++ (Performance Computing)</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Cryptology</h3>
-                    <ul>
-                        <li>Cryptographic Protocols</li>
-                        <li>Blockchain Technology</li>
-                        <li>Privacy-Preserving ML</li>
-                        <li>Secure Multi-party Computation</li>
-                        <li>Post-Quantum Cryptography</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <h3>Data Science</h3>
-                    <ul>
-                        <li>Statistical Analysis</li>
-                        <li>Data Visualization (Matplotlib, Seaborn)</li>
-                        <li>Big Data (Spark, Hadoop)</li>
-                        <li>Cloud Platforms (AWS, Azure, GCP)</li>
-                        <li>MLOps & Model Deployment</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">Innovative solutions in AI, ML, and Cryptology</p>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Interactive ML Playground</h3>
-                        <p>A web-based platform to explore and experiment with machine learning algorithms implemented from scratch, featuring real-time visualization and sklearn comparison.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">FastAPI</span>
-                            <span class="tech-tag">Streamlit</span>
-                            <span class="tech-tag">Azure</span>
-                            <span class="tech-tag">NumPy</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://playground.vanshdeshwal.dev" class="project-link" target="_blank">Live Demo</a>
-                            <a href="https://github.com/VanshDeshwal/ML-Playground" class="project-link" target="_blank">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-eye"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Computer Vision for Medical Imaging</h3>
-                        <p>Built a CNN-based system for automated diagnosis of medical conditions from X-ray and MRI scans with 95% accuracy.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">OpenCV</span>
-                            <span class="tech-tag">Medical AI</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Live Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-comments"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>NLP Sentiment Analysis Platform</h3>
-                        <p>Created a real-time sentiment analysis system for social media data using transformer models and deployed on cloud.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">BERT</span>
-                            <span class="tech-tag">Flask</span>
-                            <span class="tech-tag">AWS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Live Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-lock"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Blockchain-Based Identity System</h3>
-                        <p>Designed a decentralized identity management system using blockchain technology and zero-knowledge proofs.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Solidity</span>
-                            <span class="tech-tag">Web3</span>
-                            <span class="tech-tag">ZK-SNARKs</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Live Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Stock Market Prediction Model</h3>
-                        <p>Developed an LSTM-based model for predicting stock prices with technical indicators and news sentiment analysis.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">LSTM</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">Alpha Vantage API</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Live Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-gamepad"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Reinforcement Learning Game AI</h3>
-                        <p>Implemented a DQN agent that learns to play complex strategy games, achieving superhuman performance.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">OpenAI Gym</span>
-                            <span class="tech-tag">DQN</span>
-                            <span class="tech-tag">PyGame</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Live Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Education & Experience</h2>
-                <p class="section-subtitle">My academic and professional journey</p>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>MTech in Cryptology</h3>
-                        <h4>Indian Statistical Institute (ISI), Kolkata</h4>
-                        <p class="timeline-date">2023 - Present</p>
-                        <p>Specializing in cryptographic protocols, blockchain technology, and privacy-preserving machine learning. Research focus on post-quantum cryptography and secure multiparty computation.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Research Intern</h3>
-                        <h4>AI Research Lab</h4>
-                        <p class="timeline-date">Summer 2023</p>
-                        <p>Worked on developing privacy-preserving machine learning algorithms. Published research on federated learning with differential privacy in top-tier conferences.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>BTech in Electronics & Communication</h3>
-                        <h4>University Name</h4>
-                        <p class="timeline-date">2019 - 2023</p>
-                        <p>Graduated with honors. Strong foundation in signal processing, digital systems, and communication protocols. Completed capstone project on secure communication systems.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Data Science Intern</h3>
-                        <h4>Tech Company</h4>
-                        <p class="timeline-date">Summer 2022</p>
-                        <p>Developed machine learning models for customer behavior prediction. Implemented end-to-end ML pipelines and deployed models in production environment.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Let's connect and collaborate</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h3>Email</h3>
-                            <p>vanshdeshwal66@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <h3>Location</h3>
-                            <p>Kolkata, India</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div>
-                            <h3>Phone</h3>
-                            <p>+91 9354002981</p>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/vansh-deshwal" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/VanshDeshwal" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://twitter.com/VanshDeshwal" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="mailto:vanshdeshwal66@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Vansh Deshwal. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="script.js"></script>
-    
-    <!-- Resume Theme Synchronization -->
-    <script>
-        // Function to detect current theme
-        function getCurrentTheme() {
-            // Check if dark theme is active (you can adjust this based on your theme implementation)
-            return document.body.classList.contains('dark-theme') ? 'dark' : 'light';
-        }
-
-        // Function to update resume link with current theme
-        function updateResumeLinkTheme() {
-            const theme = getCurrentTheme();
-            const resumeLink = document.getElementById('resume-link');
-            if (resumeLink) {
-                resumeLink.href = `https://resume.vanshdeshwal.dev?theme=${theme}`;
-            }
-        }
-
-        // Update resume link on page load
-        document.addEventListener('DOMContentLoaded', updateResumeLinkTheme);
-
-        // Update resume link when theme changes (if you implement theme toggle)
-        const observer = new MutationObserver(function(mutations) {
-            mutations.forEach(function(mutation) {
-                if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
-                    updateResumeLinkTheme();
-                }
-            });
-        });
-
-        // Observe body class changes for theme updates
-        observer.observe(document.body, {
-            attributes: true,
-            attributeFilter: ['class']
-        });
-
-        // If theme toggle buttons exist, add event listeners
-        document.addEventListener('DOMContentLoaded', function() {
-            const themeToggles = document.querySelectorAll('.theme-toggle, .theme-btn');
-            themeToggles.forEach(btn => {
-                btn.addEventListener('click', function() {
-                    setTimeout(updateResumeLinkTheme, 100); // Small delay to ensure theme change is applied
-                });
-            });
-        });
-    </script>
+  <script src="script.js"></script>
 </body>
 </html>

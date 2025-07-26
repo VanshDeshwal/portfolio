@@ -1,0 +1,27 @@
+{
+  "name": "Vansh Deshwal - AI/ML Portfolio",
+  "short_name": "Vansh Portfolio",
+  "description": "Data Science, AI & Machine Learning Portfolio showcasing innovative projects",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://via.placeholder.com/192x192/3b82f6/ffffff?text=VD",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://via.placeholder.com/512x512/3b82f6/ffffff?text=VD",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "technology", "ai", "ml"],
+  "lang": "en-US",
+  "dir": "ltr"
+}

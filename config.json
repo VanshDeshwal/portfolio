@@ -1,0 +1,68 @@
+{
+  "site": {
+    "title": "Vansh Deshwal - AI/ML Portfolio",
+    "description": "Data Science, AI & Machine Learning Portfolio. Showcasing innovative projects in artificial intelligence and machine learning.",
+    "author": "Vansh Deshwal",
+    "url": "https://vanshdeshwal.dev",
+    "version": "2.0.0"
+  },
+  "contact": {
+    "email": "vanshdeshwal66@gmail.com",
+    "linkedin": "https://linkedin.com/in/vansh-deshwal",
+    "github": "https://github.com/VanshDeshwal"
+  },
+  "projects": [
+    {
+      "id": "ml-playground",
+      "title": "Interactive ML Playground",
+      "description": "A web-based platform for exploring machine learning algorithms with real-time visualization and interactive parameter tuning. Built from scratch with comprehensive sklearn comparisons.",
+      "status": "live",
+      "technologies": ["Python", "Streamlit", "Scikit-learn", "Plotly"],
+      "links": {
+        "demo": "https://playground.vanshdeshwal.dev",
+        "github": "https://github.com/VanshDeshwal/ml-playground"
+      },
+      "animation": "ghost"
+    },
+    {
+      "id": "credit-risk",
+      "title": "Credit Risk Modeling",
+      "description": "Machine learning model for predicting credit default risk using advanced ensemble methods. Features real-time risk assessment, fraud detection, and comprehensive financial analytics dashboard.",
+      "status": "live",
+      "technologies": ["Python", "XGBoost", "Pandas", "Streamlit", "SQLAlchemy"],
+      "links": {
+        "demo": "https://research.vanshdeshwal.dev",
+        "github": "https://github.com/VanshDeshwal/credit-risk-model"
+      },
+      "animation": "credit-card"
+    },
+    {
+      "id": "blockchain-security",
+      "title": "Blockchain Security Tool",
+      "description": "Advanced cryptographic security analysis platform focusing on blockchain vulnerabilities and smart contract auditing. Integrating MTech research with practical security tools.",
+      "status": "development",
+      "technologies": ["Solidity", "Python", "Web3", "Cryptography"],
+      "links": {
+        "demo": "#",
+        "github": "#"
+      },
+      "animation": "security"
+    },
+    {
+      "id": "ai-assistant",
+      "title": "AI-Powered Code Assistant",
+      "description": "Intelligent code analysis and suggestion platform combining static analysis with machine learning. Features automated code review, bug detection, and performance optimization recommendations.",
+      "status": "development",
+      "technologies": ["Python", "Transformers", "AST", "VSCode API"],
+      "links": {
+        "demo": "#",
+        "github": "#"
+      },
+      "animation": "ai"
+    }
+  ],
+  "build": {
+    "lastUpdated": "2025-01-26",
+    "buildNumber": "1.0.0"
+  }
+}
